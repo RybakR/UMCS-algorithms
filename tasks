@@ -1,0 +1,38 @@
+1.
+
+Janusz planuje zrobić zakupy! Oszczędność naszego bohatera spowodowała, że zamierza bardzo dokładnie zaplanować swoją trasę. 
+Janusz wszystkie produkty kupuje na promocjach. Niestety promocje na produkty, które chce kupić występują w różnych sklepach oraz w różne dni! 
+Klucz do sukcesu to jak najmniejszy koszt wojaży do wybranych sklepów! Na koszt składa się czas oraz odległość. 
+Nasz bohater wyliczył, że jedna minuta jego trasy jest warta 18 gr, zaś każdy kilometr przejechany automobilem 49 gr.
+
+Nasz rodak niewątpliwie posiada umiejętności kartografa (przynajmniej tak uważa jego syn...), co pozwoliło na wykreślenie dokładnej mapy okolicznych sklepów. 
+Niestety nie zna czasu i odległości pomiędzy każdym ze sklepów, jednakże jego aktualna wiedza jest wystarczająca aby połączenia między placówkami tworzyły spójną całość. 
+Spora ilość prostych linii łączących miejsca zakupów, odległości i czas naniesione na schemat przyprawiły Janusza o ból głowy.
+
+Napisz program, który pomoże naszemu bohaterowi zaoszczędzić możliwie największą liczbę pieniędzy na trasie dom - wybrany sklep.
+
+WEJŚCIE
+Program wczytuje liczbę naturalną V, która definiuje ile sklepów jest w okolicy (V-1). Następnie program powinien wczytać liczbę naturalną E, 
+która jest liczbą połączeń pomiędzy sklepami. W kolejnym kroku program powinien wczytać E sekwencji A B l0 t0 l1 t1, gdzie A i B to liczby 
+odpowiadające placówkom naniesionym na mapę, zaś l0 t0 to długość i czas na trasie z A do B, a l1 t1 z B do A. 
+Następnie algorytm powinien wczytać wartość S będącą ilością sklepów oraz S wartości, które będą identyfikatorami sklepów, 
+które nasz bohater odwiedzi podczas wojaży trwających S dni. Numerem 0 na schemacie Janusza jest oznaczony jego dom.
+
+0 <= A, B, V, S, l0, t0, l1, t1 <= 30 000
+0 <= E <= 1 000 000 000
+0 <= V <= 30000
+
+WYJŚCIE
+Na wyjściu algorytm powinien wyświetlić średnią arytmetyczną najmniejszych możliwych kosztów z każdego dnia. 
+Wynik powinien być podany z precyzją do trzech miejsc po przecinku.
+
+PRZYKŁADOWE WEJŚCIE
+4 5
+0 1 8.0 12 5.0 11
+0 2 7.0 12 4.0 11
+0 3 14.0 25 11.0 20
+1 3 8.0 11 4.0 11
+2 3 7.0 11 7.0 11
+2 1 3
+PRZYKŁADOWE WYJŚCIE
+14.940
