@@ -1,4 +1,4 @@
-1. --------------
+1. ----------------------------
 
 Janusz planuje zrobić zakupy! Oszczędność naszego bohatera spowodowała, że zamierza bardzo dokładnie zaplanować swoją trasę. 
 Janusz wszystkie produkty kupuje na promocjach. Niestety promocje na produkty, które chce kupić występują w różnych sklepach oraz w różne dni! 
@@ -11,7 +11,7 @@ Spora ilość prostych linii łączących miejsca zakupów, odległości i czas 
 
 Napisz program, który pomoże naszemu bohaterowi zaoszczędzić możliwie największą liczbę pieniędzy na trasie dom - wybrany sklep.
 
-WEJŚCIE
+WEJŚCIE:
 Program wczytuje liczbę naturalną V, która definiuje ile sklepów jest w okolicy (V-1). Następnie program powinien wczytać liczbę naturalną E, 
 która jest liczbą połączeń pomiędzy sklepami. W kolejnym kroku program powinien wczytać E sekwencji A B l0 t0 l1 t1, gdzie A i B to liczby 
 odpowiadające placówkom naniesionym na mapę, zaś l0 t0 to długość i czas na trasie z A do B, a l1 t1 z B do A. 
@@ -22,11 +22,11 @@ które nasz bohater odwiedzi podczas wojaży trwających S dni. Numerem 0 na sch
 0 <= E <= 1 000 000 000
 0 <= V <= 30000
 
-WYJŚCIE
+WYJŚCIE:
 Na wyjściu algorytm powinien wyświetlić średnią arytmetyczną najmniejszych możliwych kosztów z każdego dnia. 
 Wynik powinien być podany z precyzją do trzech miejsc po przecinku.
 
-PRZYKŁADOWE WEJŚCIE
+PRZYKŁADOWE WEJŚCIE:
 4 5
 0 1 8.0 12 5.0 11
 0 2 7.0 12 4.0 11
@@ -34,11 +34,12 @@ PRZYKŁADOWE WEJŚCIE
 1 3 8.0 11 4.0 11
 2 3 7.0 11 7.0 11
 2 1 3
-PRZYKŁADOWE WYJŚCIE
+
+PRZYKŁADOWE WYJŚCIE:
 14.940
 
 
-2. --------------
+2. ----------------------------
 
 
 Podczas zakupów Janusz spotkał swojego starego znajomego Zbyszka. Zbyszek jest bardzo rozsądnym facetem i podobnie do Janusza jest bardzo oszczędny. 
@@ -48,7 +49,7 @@ Ulepszenie polegało na tym, żeby zarejestrować się w aplikacji umożliwiają
 
 Usprawnij poprzedni program tak by brał pod uwagę ewentualne zyski naszego rodaka.
 
-WEJŚCIE
+WEJŚCIE:
 Program wczytuje liczbę naturalną V, która definiuje ile sklepów jest w okolicy. Następnie program powinien wczytać liczbę naturalną E, 
 która jest liczbą połączeń pomiędzy sklepami, które naniósł na swój plan Janusz. W kolejnym kroku program powinien wczytać E sekwencji A B l0 t0 p0 l1 t1 p1, 
 gdzie A i B to liczby odpowiadające placówkom naniesionym na mapę, zaś l0 t0 p0 to długość, czas i ewentualny zarobek na trasie z A do B, a l1 t1 p1 z B do A. 
@@ -59,13 +60,13 @@ które nasz bohater odwiedzi podczas wojaży trwających S dni. Numerem 0 na sch
 0 <= E <= 1 000 000 000
 0 <= V <= 30000
 
-WYJŚCIE
+WYJŚCIE:
 Na wyjściu algorytm powinien wyświetlić średnią arytmetyczną najmniejszych możliwych kosztów z każdego dnia. 
 Wynik powinien być podany z precyzją do trzech miejsc po przecinku. Może dojść do sytuacji, gdy podróżowanie na pewnym odcinku będzie przynosiło Januszowi ciągłe profity.
 W takiej sytuacji należy zmusić naszego bohatera by szybko wracał do domu ze swoimi zakupami, zanim zrobi to jego ukochana, zniecierpliwiona Grażyna, 
 wyświetlając komunikat "DO DOMU!".
 
-PRZYKŁADOWE WEJŚCIE
+PRZYKŁADOWE WEJŚCIE:
 4 5
 0 1 8.0 12 0 5.0 11 0
 0 2 7.0 12 0 4.0 11 0
@@ -73,10 +74,11 @@ PRZYKŁADOWE WEJŚCIE
 1 3 8.0 11 0 4.0 11 0
 2 3 7.0 11 0 7.0 11 0
 2 1 3
-PRZYKŁADOWE WYJŚCIE
+
+PRZYKŁADOWE WYJŚCIE:
 10.250
 
-3. --------------
+3. ----------------------------
 
 
 W związku z tym, że naszemu bohaterowi udało się zoptymalizować drogę na zakupy, czas na doskonalenie poruszania się po sklepie. 
@@ -94,7 +96,7 @@ i ograniczyć koszty zakupu produktów promocyjnych z półek.
 Niestety nasz mistrz oszczędzania posiada cały plan sklepu i nie potrafi poradzić sobie ze znalezieniem najlepszej ścieżki do wszystkich interesujących go produktów. 
 Ponownie potrzebuje Twojej pomocy!
 
-WEJŚCIE
+WEJŚCIE:
 Algorytm na wejściu otrzymuje liczbę M i N, M mówi o liczbie stanowisk, zaś N o ilości połączeń pomiędzy nimi. 
 Następnie program powinien wczytać M wartości 0 lub 1. 0 jeśli stoisko nie interesuje Janusza i 1 w przeciwnym wypadku. 
 Kolejno program powinien wczytać N sekwencji wartości A B V, gdzie A B określa numery odpowiednich stanowisk, 
@@ -102,10 +104,10 @@ a V to liczba całkowitą będąca dodatkowym kosztem na drodze pomiędzy nimi.
 
 0 <= N, M, A, B, V <= 2 000 000 000
 
-WYJŚCIE
+WYJŚCIE:
 Program powinien wypisać całkowitą ilość dodatkowych kosztów, jaką poniesie Janusz, poruszając się pomiędzy wybranymi stanowiskami.
 
-PRZYKŁADOWE WEJŚCIE
+PRZYKŁADOWE WEJŚCIE:
 4 6
 1 1 0 1
 0 2 5
@@ -114,11 +116,12 @@ PRZYKŁADOWE WEJŚCIE
 1 3 1
 3 0 7
 3 2 3 
-PRZYKŁADOWE WYJŚCIE
+
+PRZYKŁADOWE WYJŚCIE:
 5
 
 
-4. --------------
+4. ----------------------------
 
 Januszowi od pewnego czasu zaczęły doskwierać niewygody mieszkania w bloku. 
 Brak prywatności, ciasnota i sąsiedzi rozbijający kotlety o 6 rano doprowadziły naszego bohatera do poważnej decyzji jaką jest budowa domu. 
@@ -155,6 +158,7 @@ Przykładowe wejście:
 1 4 2
 2 5 4
 4 5 4
+
 Przykładowe wyjście:
 5 NIE 8
 3 OK
@@ -175,7 +179,7 @@ unsigned long zapytajJanusza(unsigned id) {
 }
 
 
-5. --------------
+5. ----------------------------
 
 Janusz od zawsze uważał się za specjalistę w absolutnie wszystkim. Oczywiście kiedy ktokolwiek próbował praktycznie zweryfikować jego wiedzę przypominał sobie,
 że zostawił mleko na gazie. Teraz jednak pojawił się prawdziwy problem. Jego szwagier wyzwał go na pojedynek w grze dekoder. 
@@ -211,6 +215,7 @@ Przykładowe wejście:
 18 testowa
 4 xyz
 8 20 3 12
+
 Przykładowe wyjście:
 Alamakota
 NIE
@@ -218,7 +223,7 @@ Test
 Ostatni
 
 
-6. --------------
+6. ----------------------------
 
 Janusz doszedł do wniosku, że utrudnienia poszukiwania utworów może być bardzo uciążliwe podczas drogi. W związku z tym wpadł na pomysł, 
 że trzeba to wszystko usprawnić. Nasz bohater pozostawia to zadanie Tobie.
@@ -227,23 +232,21 @@ Należy stworzyć kolejny system, który pozwala w sprawny sposób przeszukiwać
 Janusz chciałby mieć program, który pozwoli na znajdowanie wszystkich utworów, których nazwa zaczyna się od pewnych liter. 
 Ułatwi to naszemu bohaterowi przeglądanie i odtwarzanie wybranych utworów.
 
-WEJŚCIE
+WEJŚCIE:
 Algorytm na wejściu otrzymuje liczbę naturalną N, która mówi o liczbie operacji naszego algorytmu. Operacje dzielimy na A oraz S:
 
 A - jest to operacja dodania utworu do naszej listy. W tej operacji algorytm powinien wczytać jednowyrazową nazwę utworu. Zakładamy, że nazwa składa się jedynie z małych liter.
-
 S - jest to operacja sprawdzania, czy istnieją utwory o wskazanym prefiksie lub nazwie.
 
-WYJŚCIE
+WYJŚCIE:
 Dla każdej operacji S algorytm powinien wyświetlić odpowiedź:
 
 - jeśli znalazł utwory o danym prefiksie, powinien wyświetlić nazwę wszystkich utworów w kolejności alfabetycznej,
-
 - jeśli nie znalazł żadnego utworu spełniającego wymagania, powinien wyświetlić '-'.
 
 0 <= N <= 2 000 000 000
 
-PRZYKŁADOWE WEJŚCIE
+PRZYKŁADOWE WEJŚCIE:
 6
 A utwo
 A utwor
@@ -251,14 +254,15 @@ S utwor
 S utwo
 A utworr
 S uz
-PRZYKŁADOWE WYJŚCIE
+
+PRZYKŁADOWE WYJŚCIE:
 utwor
 utwo
 utwor
 -
 
 
-7. --------------
+7. ----------------------------
 
 Pierwszym punktem wycieczki jest Muzeum Lubelskie w Lublinie. Znajduje się tam biblioteka, która zajmuje się prowadzeniem całokształtu spraw związanych z gromadzeniem, 
 przechowywaniem, ewidencjonowaniem, opracowywaniem i udostępnianiem księgozbioru związanego z działalnością statutową Muzeum.
@@ -268,25 +272,23 @@ go książek i czasopism. Księgozbiór główny zlokalizowany jest w dwóch pom
 
 Napisz program, który ułatwi znajdowanie interesujących naszego bohatera czasopism.
 
-WEJŚCIE
+WEJŚCIE:
 Algorytm na wejściu otrzymuje liczbę naturalną N, która mówi o liczbie operacji naszego algorytmu. Operacje dzielimy na A oraz S:
 
 A - jest to operacja dodania położenia utworu literackiego o podanym tytule do biblioteki. 
 W tej operacji algorytm powinien wczytać jednowyrazową nazwę dzieła oraz jego miejsce w zbiorze.
-
 S - jest to operacja odczytania położenia dzieła o podanej nazwie.
 
-WYJŚCIE
+WYJŚCIE:
 Dla każdej operacji S algorytm powinien wyświetlić odpowiedź:
 
 - jeśli znalazł podane dzieło, powinien wyświetlić jego położenie,
-
 - jeśli nie znalazł żadnego utworu literackiego o takiej nazwie, powinien wyświetlić '-'.
 
 Długość nazwy i określenia położenia to maksymalnie 25 znaków. W bibliotece nie ma powtarzających się pozycji literackich.
 1 <= N <= 100000
 
-PRZYKŁADOWE WEJŚCIE
+PRZYKŁADOWE WEJŚCIE:
 7
 A Encyklopedia_PWN A3rE12
 A Encyklopedia_Powszechna A3rE13
@@ -295,14 +297,15 @@ A Polski_Slownik A12rS13
 S Slownik_Synonimow
 S Polski_Slownik 
 S Historia_Polski
-PRZYKŁADOWE WYJŚCIE
+
+PRZYKŁADOWE WYJŚCIE:
 A3rE12
 -
 A12rS13
 -
 
 
-8. --------------
+8. ----------------------------
 
 Pioter szuka sposobu na łatwy zarobek i próbował już wielu rzeczy. Teraz zainteresowały go gry losowe tj. LOTTO. 
 Uważa, że wszystko jest tam ustawione! By wygrać duże pieniądze w kumulacji należy odgadnąć zasady funkcjonowania systemu. 
@@ -318,22 +321,23 @@ będzie indeksem wystąpienia tej subsekwencji w kolejnym okresie liczb."
 
 Pomóż Pioterowi odkryć pierwsze wystąpienie magicznej subsekwencji X w następnym okresie.
 
-WEJŚCIE
+WEJŚCIE:
 Program wczytuje liczbę naturalną V, będącą ilością liczb w aktualnym okresie. Następnie program powinien wczytać V liczb naturalnych.
 W kolejnym kroku algorytm powinien wczytać liczbę naturalną P, a na koniec P liczb naturalnych reprezentujących subsekwencję X.
 
 0 <= liczby w sekwencji <= 100
 0 <= V, P, N <= 2 000 000 000
 
-WYJŚCIE
+WYJŚCIE:
 Wyświetl pozycję pierwszego wystąpienia subsekwencji w kolejnym okresie. Zakładając, że sekwencje numerowane są od 0.
 
-PRZYKŁADOWE WEJŚCIE
+PRZYKŁADOWE WEJŚCIE:
 16
 1 1 1 2 3 88 99 24 1 2 3 1 2 3 99 39
 2
 2 3
-PRZYKŁADOWE WYJŚCIE
+
+PRZYKŁADOWE WYJŚCIE:
 5
 
 
@@ -354,24 +358,25 @@ Napisz program, który obliczy prawdopodobieństwo znalezienie naszej bohaterki 
 4 - łazienka,
 5 - balkon.
 
-WEJŚCIE
+WEJŚCIE:
 Program na wejście otrzymuje dwie godziny w formacie HH:mm, które mówią o przedziale czasowym do zweryfikowania, a następnie przyjmuje numer pokoju.
 
 0 < HH <= 24
 0 <= mm < 60
 
-WYJŚCIE
+WYJŚCIE:
 Należy wypisać jakie jest prawdopodobieństwo pojawienia się Grażyny, w wybranym pomieszczeniu w danym przedziale czasowy. 
 Wynik powinien być podany z dokładnością do dwóch miejsc po przecinku.
 
-PRZYKŁADOWE WEJŚCIE
+PRZYKŁADOWE WEJŚCIE:
 8:00
 22:00
 0
-PRZYKŁADOWE WYJŚCIE
+
+PRZYKŁADOWE WYJŚCIE:
 0.50
 
-FUNKCJA PODAJĄCA GDZIE JEST GRAŻYNA W DANEJ GODZINIE
+FUNKCJA PODAJĄCA GDZIE JEST GRAŻYNA W DANEJ GODZINIE:
 
 int Grazyna(int HH, int mm){
 	if(HH >= 8 && HH < 15) return 0;
@@ -418,10 +423,12 @@ Przykładowe wejście:
 4.1
 5.7
 1.1
+
 Przykładowe wyjście:
 3
 
-Funkcja w przykładzie jest zdefiniowana następująco
+Funkcja w przykładzie jest zdefiniowana następująco:
+
 double butelka(double cm) {
 	return 10 - (cm-2) * (cm-2);
 }
