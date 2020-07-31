@@ -40,6 +40,7 @@ PRZYKŁADOWE WYJŚCIE
 
 2. --------------
 
+
 Podczas zakupów Janusz spotkał swojego starego znajomego Zbyszka. Zbyszek jest bardzo rozsądnym facetem i podobnie do Janusza jest bardzo oszczędny. 
 Nasz bohater pochwalił się swoim procesem optymalizacji. Jednak nie zrobiło to żadnego wrażenia na Zbyszku. Ten już miał podobny pomysł i dodatkowo go usprawnił. 
 Ulepszenie polegało na tym, żeby zarejestrować się w aplikacji umożliwiającej przewóz innych obywateli za pieniądze.
@@ -76,6 +77,7 @@ PRZYKŁADOWE WYJŚCIE
 10.250
 
 3. --------------
+
 
 W związku z tym, że naszemu bohaterowi udało się zoptymalizować drogę na zakupy, czas na doskonalenie poruszania się po sklepie. 
 Szukane przez naszego bohatera produkty znajdują się na konkretnych stanowiskach tj. stoisko mięsne, stoisko rybne, stoisko piekarnicze... 
@@ -115,4 +117,62 @@ PRZYKŁADOWE WEJŚCIE
 PRZYKŁADOWE WYJŚCIE
 5
 
+
 4. --------------
+
+Januszowi od pewnego czasu zaczęły doskwierać niewygody mieszkania w bloku. 
+Brak prywatności, ciasnota i sąsiedzi rozbijający kotlety o 6 rano doprowadziły naszego bohatera do poważnej decyzji jaką jest budowa domu. 
+Postanowił, że zacznie od planów jednak na wstępie wątpliwości budzi hydraulika. Janusz ma bardzo konkretne wymagania dotyczące wydajności każdego kranu i przyłącza. 
+Przeglądając otrzymany plan zaczął się zastanawiać czy przy odkręconym tylko jednym kranie w danym momencie jest w stanie uzyskać z niego oczekiwaną ilość wody
+(podawanej w swojej własnej Januszowej jednostce). Ustalenie tego nie jest jednak proste. Na planie każda rurka ma określoną wydajność oraz zawiera informację 
+w którą stronę może płynąć woda. Numer węzła głównego przy pomocy którego woda wpływa do instalacji jest oznaczony na schemacie. Janusz wie również, 
+że węzły do których woda wpływa ale nie wypływa są przyłączami wyjściowymi. Dla każdego z nich musi sprawdzić czy maksymalny przepływ wody jest co najmniej taki jak zakłada.
+
+Wejście:
+W pierwszej linii program wczytuje trzy liczby naturalne V, E oraz S. Pierwsza z nich definiuje ilość węzłów na planie, 
+druga ilość połączeń między nimi natomiast ostatnia określa węzeł początkowy. W kolejnym kroku program powinien wczytać E opisów połączeń między węzłami 
+składających się z trzech liczb naturalnych A, B oraz W. Pierwsze dwie liczby to numery węzłów które łączy trasa z A do B, natomiast W określa jej wydajność.
+Węzły są numerowane od 0.
+
+Należy wykorzystać wbudowaną funkcję unsigned long zapytajJanusza(unsigned id) aby sprawdzić jaka jest oczekiwana minimalna wydajność testowanego węzła wyjściowego.
+
+Wyjście:
+Na wyjściu program powinien zwrócić informację czy wydajność każdego z węzłów wyjściowych jest co najmniej taka jak zakłada Janusz. 
+Każda linia wyjścia rozpoczynana jest od numeru węzła. Jeżeli własność jest spełniona to dodawana jest wiadomość „OK”.
+W przeciwnym przypadku wyświetlana jest informacja „NIE”, oraz ustalony maksymalny przepływ. Informacje powinny być wyświetlane w kolejności malejącej numerów węzłów.
+
+0 <= V <= 25000
+0 <= E <= 10000000
+1 <= W <= 25000000
+
+Przykładowe wejście:
+6 8 0
+0 1 2
+0 2 4
+0 3 3
+0 4 3
+2 3 5
+1 4 2
+2 5 4
+4 5 4
+Przykładowe wyjście:
+5 NIE 8
+3 OK
+
+Funkcja w przykładzie jest zdefiniowana następująco:
+
+unsigned long zapytajJanusza(unsigned id) {
+	unsigned long value = 0;
+	switch( id ) {
+	case 3:
+		value = 7;
+		break;
+	case 5:
+		value = 9;
+		break;
+	}
+	return value;
+}
+
+
+5. --------------
