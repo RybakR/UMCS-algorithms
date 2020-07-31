@@ -77,3 +77,42 @@ PRZYKŁADOWE WYJŚCIE
 
 3. --------------
 
+W związku z tym, że naszemu bohaterowi udało się zoptymalizować drogę na zakupy, czas na doskonalenie poruszania się po sklepie. 
+Szukane przez naszego bohatera produkty znajdują się na konkretnych stanowiskach tj. stoisko mięsne, stoisko rybne, stoisko piekarnicze... 
+Dodatkowo nasz rodak nie bardzo chce odwiedzać stoiska, które nie zawierają interesujących go produktów. Musi oszczędzać swój czas! 
+Oczywiście wykluczenie nieinteresujących nas stanowisk w sklepie, nie wyklucza dotarcia do tych niezbędnych.
+
+Stanowiska łączą różne drogi, a na nich znajdują się półki z różnymi produktami. 
+Problemem są czające się na każdej półce promocje, które z pewnością skuszą naszego bohatera. 
+Niesamowicie opłacalne oferty na niepotrzebne przedmioty mogłyby skłonić Janusza do nieoczekiwanych zakupów. Utożsamianych z niepotrzebnymi wydatkami. 
+Oczywiście, czym droższy produkt na ścieżce tym zakupy stają się mniej opłacalna dla Janusza. Na szczęście taka sytuacja miałaby miejsce tylko raz, 
+po co dwa razy kupować to samo?! Z tego powodu musi ograniczyć tego typu wydatki. Plan jest prosty odwiedzić jedynie interesujące Janusza stanowiska 
+i ograniczyć koszty zakupu produktów promocyjnych z półek.
+
+Niestety nasz mistrz oszczędzania posiada cały plan sklepu i nie potrafi poradzić sobie ze znalezieniem najlepszej ścieżki do wszystkich interesujących go produktów. 
+Ponownie potrzebuje Twojej pomocy!
+
+WEJŚCIE
+Algorytm na wejściu otrzymuje liczbę M i N, M mówi o liczbie stanowisk, zaś N o ilości połączeń pomiędzy nimi. 
+Następnie program powinien wczytać M wartości 0 lub 1. 0 jeśli stoisko nie interesuje Janusza i 1 w przeciwnym wypadku. 
+Kolejno program powinien wczytać N sekwencji wartości A B V, gdzie A B określa numery odpowiednich stanowisk, 
+a V to liczba całkowitą będąca dodatkowym kosztem na drodze pomiędzy nimi.
+
+0 <= N, M, A, B, V <= 2 000 000 000
+
+WYJŚCIE
+Program powinien wypisać całkowitą ilość dodatkowych kosztów, jaką poniesie Janusz, poruszając się pomiędzy wybranymi stanowiskami.
+
+PRZYKŁADOWE WEJŚCIE
+4 6
+1 1 0 1
+0 2 5
+1 0 4
+1 2 2
+1 3 1
+3 0 7
+3 2 3 
+PRZYKŁADOWE WYJŚCIE
+5
+
+4. --------------
