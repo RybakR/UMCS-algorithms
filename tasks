@@ -341,7 +341,7 @@ PRZYKŁADOWE WYJŚCIE:
 5
 
 
-9. --------------
+9. ----------------------------
 
 Grażyna wyczytała w gazecie, że kuchnia to najbardziej prawdopodobne miejsce, gdzie można zastać statystyczną kobietę. 
 Naszej bohaterce nie bardzo podoba się to stwierdzenie. W końcu uważa siebie za nowoczesną reprezentantkę tej płci, nie potrzebuje opinii innych, 
@@ -385,7 +385,7 @@ int Grazyna(int HH, int mm){
 }
 
 
-10. --------------
+10. ----------------------------
 
 Januszowi w ostatnich dniach strasznie doskwierają upały. Jako człowiek wyjątkowo oszczędny postanowił ograniczyć zużycie prądu. 
 Właśnie dlatego nie korzysta z wentylatorów ani klimatyzacji. Postanowił połączyć przyjemne z pożytecznym. 
