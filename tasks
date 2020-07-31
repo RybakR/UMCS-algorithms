@@ -219,3 +219,44 @@ Ostatni
 
 
 6. --------------
+
+Janusz doszedł do wniosku, że utrudnienia poszukiwania utworów może być bardzo uciążliwe podczas drogi. W związku z tym wpadł na pomysł, 
+że trzeba to wszystko usprawnić. Nasz bohater pozostawia to zadanie Tobie.
+
+Należy stworzyć kolejny system, który pozwala w sprawny sposób przeszukiwać stworzoną listę przebojów. 
+Janusz chciałby mieć program, który pozwoli na znajdowanie wszystkich utworów, których nazwa zaczyna się od pewnych liter. 
+Ułatwi to naszemu bohaterowi przeglądanie i odtwarzanie wybranych utworów.
+
+WEJŚCIE
+Algorytm na wejściu otrzymuje liczbę naturalną N, która mówi o liczbie operacji naszego algorytmu. Operacje dzielimy na A oraz S:
+
+A - jest to operacja dodania utworu do naszej listy. W tej operacji algorytm powinien wczytać jednowyrazową nazwę utworu. Zakładamy, że nazwa składa się jedynie z małych liter.
+
+S - jest to operacja sprawdzania, czy istnieją utwory o wskazanym prefiksie lub nazwie.
+
+WYJŚCIE
+Dla każdej operacji S algorytm powinien wyświetlić odpowiedź:
+
+- jeśli znalazł utwory o danym prefiksie, powinien wyświetlić nazwę wszystkich utworów w kolejności alfabetycznej,
+
+- jeśli nie znalazł żadnego utworu spełniającego wymagania, powinien wyświetlić '-'.
+
+0 <= N <= 2 000 000 000
+
+PRZYKŁADOWE WEJŚCIE
+6
+A utwo
+A utwor
+S utwor
+S utwo
+A utworr
+S uz
+PRZYKŁADOWE WYJŚCIE
+utwor
+utwo
+utwor
+-
+
+
+6. --------------
+
