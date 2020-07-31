@@ -176,3 +176,46 @@ unsigned long zapytajJanusza(unsigned id) {
 
 
 5. --------------
+
+Janusz od zawsze uważał się za specjalistę w absolutnie wszystkim. Oczywiście kiedy ktokolwiek próbował praktycznie zweryfikować jego wiedzę przypominał sobie,
+że zostawił mleko na gazie. Teraz jednak pojawił się prawdziwy problem. Jego szwagier wyzwał go na pojedynek w grze dekoder. 
+Zasady są bardzo proste. Plansza wygląda jak drzewo gdzie w każdym węźle przechowywany jest fragment hasła oraz cyfra. 
+Gracz buduje je wykonując serię insertów. Gracz dostaje liczbę i wyszukuje węzeł zgodny z tym numerem. 
+Jeżeli udało mu się go znaleźć to wypisuje części hasła zawarte w nim aż do korzenia usuwając wykorzystane węzły. 
+Jeżeli usuwany węzeł posiada dwóch potomków zastępowany jest zawsze swoim następnikiem. Gracz który w określonym czasie ułoży największą liczbę haseł wygrywa. 
+Janusz spróbował w domu wykonać kilka rund. Niestety nie poszło mu najlepiej. Postanowił zatem, że spróbuje załatwić szwagra sposobem. 
+Potrzebuje tylko programu który zasymuluje kroki gry.
+
+Wejście:
+W pierwszej linii wejścia program otrzymuje dwie liczby n i m oznaczające kolejno ilość węzłów w drzewie oraz ilość wyszukań. 
+Następnie w n liniach znajdują się pary składające się z liczby a będącej kluczem w drzewie i ciągu znaków b będącego przechowywaną wartością. 
+Pierwszy element jest korzeniem drzewa. W kolejnym kroku, w m liniach program otrzymuje liczbę x będącą poszukiwanym kluczem węzła.
+
+Wyjście:
+Na wyjściu program powinien wypisać kod od znalezionego węzła do korzenia. Jeżeli nie udało się znaleźć węzła o odpowiednim kluczu 
+na standardowym wyjściu powinien pojawić się komunikat NIE.
+
+1 ≤ n ≤ 500000
+1 ≤ m < n
+1 ≤ a, x ≤ 750000
+
+Przykładowe wejście:
+9 4
+10 kota
+5 ma
+15 Dana
+3 Te
+8 Ala
+11 st
+12 Ostatni
+18 testowa
+4 xyz
+8 20 3 12
+Przykładowe wyjście:
+Alamakota
+NIE
+Test
+Ostatni
+
+
+6. --------------
