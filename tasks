@@ -258,5 +258,83 @@ utwor
 -
 
 
-6. --------------
+7. --------------
 
+Pierwszym punktem wycieczki jest Muzeum Lubelskie w Lublinie. Znajduje się tam biblioteka, która zajmuje się prowadzeniem całokształtu spraw związanych z gromadzeniem, 
+przechowywaniem, ewidencjonowaniem, opracowywaniem i udostępnianiem księgozbioru związanego z działalnością statutową Muzeum.
+
+Jako, że Janusz rzadko czyta literaturę, a jeszcze rzadziej odwiedza takie miejsca jak biblioteka nie jest w stanie poradzić sobie ze zlokalizowaniem "interesujących" 
+go książek i czasopism. Księgozbiór główny zlokalizowany jest w dwóch pomieszczeniach magazynowych. Każdy egzemplarz zbioru ma swoje miejsce tj. alejka, numer regału itd..
+
+Napisz program, który ułatwi znajdowanie interesujących naszego bohatera czasopism.
+
+WEJŚCIE
+Algorytm na wejściu otrzymuje liczbę naturalną N, która mówi o liczbie operacji naszego algorytmu. Operacje dzielimy na A oraz S:
+
+A - jest to operacja dodania położenia utworu literackiego o podanym tytule do biblioteki. 
+W tej operacji algorytm powinien wczytać jednowyrazową nazwę dzieła oraz jego miejsce w zbiorze.
+
+S - jest to operacja odczytania położenia dzieła o podanej nazwie.
+
+WYJŚCIE
+Dla każdej operacji S algorytm powinien wyświetlić odpowiedź:
+
+- jeśli znalazł podane dzieło, powinien wyświetlić jego położenie,
+
+- jeśli nie znalazł żadnego utworu literackiego o takiej nazwie, powinien wyświetlić '-'.
+
+Długość nazwy i określenia położenia to maksymalnie 25 znaków. W bibliotece nie ma powtarzających się pozycji literackich.
+1 <= N <= 100000
+
+PRZYKŁADOWE WEJŚCIE
+7
+A Encyklopedia_PWN A3rE12
+A Encyklopedia_Powszechna A3rE13
+S Encyklopedia_PWN 
+A Polski_Slownik A12rS13
+S Slownik_Synonimow
+S Polski_Slownik 
+S Historia_Polski
+PRZYKŁADOWE WYJŚCIE
+A3rE12
+-
+A12rS13
+-
+
+
+8. --------------
+
+Pioter szuka sposobu na łatwy zarobek i próbował już wielu rzeczy. Teraz zainteresowały go gry losowe tj. LOTTO. 
+Uważa, że wszystko jest tam ustawione! By wygrać duże pieniądze w kumulacji należy odgadnąć zasady funkcjonowania systemu. 
+Te zasady syn naszego bohatera usłyszał od swojego kolegi, w postaci bardzo ciekawej nowiny. Niestety nie do końca rozumie o co w niej chodzi!
+
+CIEKAWA NOWINA KOLEGI PIOTERA - SEBY:
+
+"Liczby podzielone są na pewne okresy. Okres jest sekwencją wielu liczb z zakresu od 0 do 100. 
+W każdym okresie co najmniej dwa razy pojawia się pewna subsekwencja liczb - X. 
+Suma dwóch poprzednich miejsca wystąpienia subsekwencji mówi o tym, gdzie subsekwencja pojawi się po raz kolejny w danym okresie. 
+Pierwsza pozycja subsekwencji wykraczająca poza zakres okresu, pomniejszona o ilość elementów w okresie, 
+będzie indeksem wystąpienia tej subsekwencji w kolejnym okresie liczb."
+
+Pomóż Pioterowi odkryć pierwsze wystąpienie magicznej subsekwencji X w następnym okresie.
+
+WEJŚCIE
+Program wczytuje liczbę naturalną V, będącą ilością liczb w aktualnym okresie. Następnie program powinien wczytać V liczb naturalnych.
+W kolejnym kroku algorytm powinien wczytać liczbę naturalną P, a na koniec P liczb naturalnych reprezentujących subsekwencję X.
+
+0 <= liczby w sekwencji <= 100
+0 <= V, P, N <= 2 000 000 000
+
+WYJŚCIE
+Wyświetl pozycję pierwszego wystąpienia subsekwencji w kolejnym okresie. Zakładając, że sekwencje numerowane są od 0.
+
+PRZYKŁADOWE WEJŚCIE
+16
+1 1 1 2 3 88 99 24 1 2 3 1 2 3 99 39
+2
+2 3
+PRZYKŁADOWE WYJŚCIE
+5
+
+
+9. --------------
